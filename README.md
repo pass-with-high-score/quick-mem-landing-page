@@ -26,11 +26,11 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/pass-with-high-score/quick_mem.git
+    git clone https://github.com/pass-with-high-score/quick-mem-landing-page.git
     ```
 2. Navigate to the project directory:
     ```sh
-    cd quick_mem
+    cd quick-mem-landing-page
     ```
 
 ## Usage
