@@ -19,6 +19,9 @@ jobs:
       - name: Install sshpass
         run: sudo apt-get install sshpass
 
+      - name: Make front-end.sh executable
+        run: chmod +x ./front-end.sh
+
       - name: Deploy to Server via SSH with password
         run: |
           sshpass -p "${{ secrets.SERVER_PASSWORD }}" ssh -o StrictHostKeyChecking=no -p 22 ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }} './front-end.sh'
