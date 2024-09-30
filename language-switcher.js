@@ -151,10 +151,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const languageToggle = document.getElementById("language-toggle");
     if (lang === "vi") {
       languageToggle.innerHTML =
-        '<img src="image/vietnam.png" alt="Vietnamese Flag" id="flag-icon" /> Vietnamese';
+        '<img src="images/vietnam.png" alt="Vietnamese Flag" id="flag-icon" /> Vietnamese';
     } else {
       languageToggle.innerHTML =
-        '<img src="image/english.png" alt="English Flag" id="flag-icon" /> English';
+        '<img src="images/english.png" alt="English Flag" id="flag-icon" /> English';
     }
   }
 
