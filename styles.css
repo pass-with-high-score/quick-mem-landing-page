@@ -310,7 +310,8 @@ nav ul li a:focus {
 
 .team-member h3 {
   font-size: 1.2rem;
-  margin-top: 15px;
+  margin-top: 5px;
+  color: #000;
 }
 
 .team-member p {
@@ -322,8 +323,36 @@ nav ul li a:focus {
   opacity: 80%;
 }
 
-.team-member:hover h3 {
+/* GitHub Username Style */
+.github-username {
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Tạo kiểu cho liên kết GitHub */
+.github-username a,
+.team-member h3 a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.github-username a:hover,
+.team-member h3 a:hover {
   text-decoration: underline;
+}
+
+.team-member img {
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+  transform: scale(1.1);
 }
 
 /* Download Section */
@@ -423,10 +452,30 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .feature-cards {
+  /* Adjust header */
+  .container {
     flex-direction: column;
+    text-align: center;
   }
 
+  /* Adjust navigation */
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  /* Adjust feature cards */
+  .feature-cards {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* Adjust about section */
   .about-feature,
   .about-feature-reverse {
     flex-direction: column;
@@ -439,13 +488,15 @@ footer {
     margin-bottom: 20px;
   }
 
+  /* Adjust team section */
   .team-member {
-    width: 100%;
+    width: 45%;
     margin-bottom: 20px;
   }
 }
 
 @media (max-width: 768px) {
+  /* Adjust hero section */
   .hero h1 {
     font-size: 2.2rem;
   }
@@ -454,12 +505,59 @@ footer {
     font-size: 1rem;
   }
 
+  .hero .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  /* Adjust feature cards */
   .feature-card {
     max-width: 100%;
   }
 
+  /* Adjust download section */
   .download-btn {
+    width: 100%;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* General Styles for small devices */
+  body {
+    font-size: 12px;
+  }
+
+  /* Adjust header for smaller screens */
+  .logo img {
+    width: 25px;
+  }
+
+  .logo span {
+    font-size: 1.2rem;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  /* Adjust feature cards for smaller screens */
+  .feature-cards {
+    gap: 15px;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+
+  /* Adjust team section for smaller screens */
+  .team-member {
+    width: 100%;
+  }
+
+  /* Adjust footer text */
+  footer {
+    font-size: 0.8rem;
   }
 }
 
