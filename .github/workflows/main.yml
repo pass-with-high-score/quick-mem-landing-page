@@ -15,12 +15,9 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4.1.7
-        
+
       - name: Install sshpass
         run: sudo apt-get install sshpass
-
-      - name: Make front-end.sh executable
-        run: chmod +x ./front-end.sh
 
       - name: Deploy to Server via SSH with password
         run: |
