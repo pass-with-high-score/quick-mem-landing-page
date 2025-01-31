@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.pwhs.quickmem",
+      "sha256_cert_fingerprints": [
+        "61:9F:23:2A:A2:09:31:65:B7:E6:F3:79:C6:B2:80:70:0B:2A:1F:CC:00:09:7F:2D:C5:D4:F6:9E:60:E0:42:F5"
+      ]
+    }
+  }
+]
