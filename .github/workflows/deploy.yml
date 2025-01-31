@@ -37,7 +37,7 @@ jobs:
           <b>Branch</b>: ${{ github.ref_name }}
           <b>Changes</b>: <a href='https://github.com/pass-with-high-score/quickmem-landing-page/commit/${{ github.sha }}'>View Changes</a>
           <b>Action</b>: <a href='https://github.com/pass-with-high-score/quickmem-landing-page/actions/runs/${{ github.run_id }}'>View Action</a>
-          <b>Link Landing page</b>: <a href='https://quickmem.app/'>https://quickmem.app.app/</a>" \
+          <b>Link Landing page</b>: <a href='https://quickmem.app/'>https://quickmem.app/</a>" \
           --data "parse_mode=HTML" \
           https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage
 
